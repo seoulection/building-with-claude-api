@@ -1,50 +1,39 @@
 [
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "72 kg",
-      "goal": "Marathon training with high carbohydrate intake and proper timing around a 2-hour morning run",
-      "restrictions": "Vegetarian, lactose intolerant"
+      "content": "This study employs mixed-methods phenomenological analysis to examine the intersection of artificial intelligence and organizational behavior within Fortune 500 companies. Using semi-structured interviews with 127 middle managers across technology, finance, and healthcare sectors, we investigated how machine learning implementation affects workplace dynamics, employee agency, and decision-making hierarchies. Our findings, grounded in Bourdieu's theory of social capital, reveal that algorithmic management systems paradoxically increase operational efficiency while diminishing workers' perceived autonomy. The research utilized NVivo for qualitative coding and structural equation modeling to test our theoretical framework, demonstrating statistically significant correlations (p < 0.001) between AI adoption rates and employee disengagement metrics across all three industries examined."
     },
     "solution_criteria": [
-      "Meal plan covers all meals for one day and fits on a single page or concise format",
-      "Includes pre-run, during-run (if applicable), and post-run nutrition timed appropriately around the 2-hour morning training session",
-      "Provides high carbohydrate content suitable for endurance athlete (approximately 6-10g carbs per kg body weight daily)",
-      "Respects vegetarian and lactose-free dietary restrictions throughout all meals"
+      "Extracts both explicit topics (artificial intelligence, machine learning, algorithmic management) and implicit ones (workplace dynamics, employee autonomy, social capital theory)",
+      "Includes methodological approaches (mixed-methods phenomenological analysis, semi-structured interviews, NVivo, structural equation modeling)",
+      "Captures proper nouns and specific entities (Bourdieu, Fortune 500 companies, technology/finance/healthcare sectors)",
+      "Identifies abstract concepts and theoretical frameworks relevant to the research"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implicit and explicit topics, including proper nouns, abstract concepts, and methodological approaches to verify accurate extraction of both obvious and subtle subjects"
   },
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "85 kg",
-      "goal": "Muscle building with caloric surplus for strength training",
-      "restrictions": "None"
+      "content": "Recent advances in synthetic biology have enabled the engineering of metabolic pathways to produce pharmaceutical compounds, raising significant ethical concerns about equitable access and biosafety. CRISPR-Cas9 gene editing systems utilize guide RNAs to target specific DNA sequences with unprecedented precision, achieving off-target mutation rates below 0.1% in optimized protocols. Simultaneously, the chemical synthesis of modified nucleotides has improved through novel catalytic mechanisms involving transition metal coordination complexes, reducing production costs by 60%. However, the dual-use potential of these biotechnologies\u2014their applicability to both therapeutic and harmful applications\u2014has prompted regulatory bodies to establish oversight frameworks. The intersection of molecular engineering, organic chemistry, and bioethics reveals tensions between scientific innovation and responsible governance, particularly regarding access disparities in developing nations and the environmental implications of large-scale fermentation-based production systems."
     },
     "solution_criteria": [
-      "Meal plan spans exactly 1 day with 4-5 meals",
-      "Daily protein distributed across meals (minimum 1.6g per kg bodyweight = 136g total)",
-      "Caloric surplus of 300-500 calories above maintenance for muscle growth",
-      "Includes pre/post-workout nutrition timing around strength training"
+      "Correctly identifies topics spanning at least three distinct domains (biology/biotechnology, chemistry, and ethics/governance)",
+      "Separates interdisciplinary topics into distinct entries rather than merging them (e.g., 'CRISPR gene editing' distinct from 'biosafety concerns')",
+      "Returns results as a JSON array of strings with no extraneous formatting or explanatory text"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) needing high protein distribution and caloric surplus for muscle building"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a dense interdisciplinary passage that spans multiple fields (e.g., biology, chemistry, and ethics) to ensure the prompt correctly disambiguates and separates topics across domain boundaries"
   },
   {
     "prompt_inputs": {
-      "height": "183 cm",
-      "weight": "78 kg",
-      "goal": "Maintain energy and performance for multiple tennis matches throughout the day with optimal hydration and recovery",
-      "restrictions": "Vegetarian, no nuts"
+      "content": "Recent advances in artificial intelligence have revolutionized data processing capabilities. Machine learning algorithms, particularly deep learning neural networks, have demonstrated exceptional performance in image recognition tasks. Supervised learning techniques enable these systems to identify patterns in training data, while unsupervised learning approaches discover latent structures without labeled examples. Natural language processing, a subfield of artificial intelligence, has benefited tremendously from transformer-based architectures that leverage machine learning principles. Additionally, reinforcement learning, another machine learning paradigm, powers autonomous decision-making in robotics and game-playing agents. The intersection of artificial intelligence and computer vision continues to expand, with convolutional neural networks serving as foundational machine learning models for visual understanding tasks."
     },
     "solution_criteria": [
-      "Meal plan includes 4-5 eating occasions spaced appropriately for match performance",
-      "Balanced macronutrients with adequate carbohydrates for energy and protein for recovery",
-      "Hydration strategy specified with fluid intake recommendations between and during sessions",
-      "All meals and snacks accommodate vegetarian and nut-free restrictions"
+      "Extracts all distinct topics mentioned, capturing both high-level domains (artificial intelligence, natural language processing, computer vision) and specific methodologies (machine learning, deep learning, supervised learning, unsupervised learning, reinforcement learning)",
+      "Avoids redundant duplication of overlapping concepts while preserving their distinct identities",
+      "Returns output as a JSON array of strings with properly formatted topic labels"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a sport-specific athlete (tennis player) requiring balanced macronutrients, hydration strategy, and energy management for multiple match-length sessions throughout the day"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing overlapping or hierarchical topics (e.g., 'machine learning' as a subtopic of 'artificial intelligence') to verify the prompt extracts distinct topic levels and avoids unnecessary redundancy"
   }
 ]

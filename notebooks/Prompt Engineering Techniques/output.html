@@ -117,11 +117,11 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">2.7 / 10</div>
+                    <div class="stat-value">9.3 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
-                    <div class="stat-value">0.0%</div>
+                    <div class="stat-value">100.0%</div>
                 </div>
             </div>
         </div>
@@ -140,145 +140,102 @@
             <tbody>
     
             <tr>
-                <td>Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon training with high carbohydrate intake and proper timing around a 2-hour morning run<br><strong>restrictions:</strong> Vegetarian, lactose intolerant</td>
-                <td class="criteria">• Meal plan covers all meals for one day and fits on a single page or concise format<br>• Includes pre-run, during-run (if applicable), and post-run nutrition timed appropriately around the 2-hour morning training session<br>• Provides high carbohydrate content suitable for endurance athlete (approximately 6-10g carbs per kg body weight daily)<br>• Respects vegetarian and lactose-free dietary restrictions throughout all meals</td>
-                <td class="output"><pre># Nutrition Plan for Marathon Training
-
-## Daily Macro Targets
-- **Calories**: ~2,800-3,000 (adjust based on weekly mileage)
-- **Carbs**: 55-60% (~400-450g) — fuels running
-- **Protein**: 15-20% (~105-120g) — muscle recovery
-- **Fat**: 20-25% (~70-80g) — hormone function
-
-## Pre-Run (1.5-2 hours before)
-- Banana + peanut butter toast (on lactose-free bread)
-- Oatmeal with almond milk and berries
-- Rice cakes with jam
-- *Goal: 200-300 cal, easily digestible carbs*
-
-## During Run (if >90 min)
-- Sports drink or electrolyte drink
-- Energy gels or dates
-- Pretzels
-
-## Post-Run (within 30-45 min)
-- Smoothie: banana, berries, lactose-free protein powder, almond milk
-- Toast with hummus + tomato
-- Rice + beans + vegetables
-- *Goal: 400-500 cal, carbs + protein 3:1 ratio*
-
-## Vegetarian Protein Sources
-- Lentils, chickpeas, beans
-- Tofu, tempeh
-- Nuts, seeds, nut butters
-- Lactose-free protein powder
-- Quinoa, whole grains
-
-## Key Timing
-Carbs consistently throughout the day, concentrated around your run for energy and recovery.
-
-Would you like specific meal ideas or recipes?</pre></td>
-                <td class="score-col"><span class="score score-low">3</span></td>
-                <td class="reasoning">The solution violates multiple mandatory requirements. While it provides daily caloric totals and macro percentages, it fails to deliver 'meals with exact foods, portions, and timing' as explicitly required. The output is a nutritional framework with suggestions rather than an actual 1-day meal plan. For example, 'Banana + peanut butter toast' lacks portion sizes (which banana size? how much peanut butter? what bread type?), and there is no structured timeline showing breakfast, lunch, dinner, and snacks with specific quantities. The task explicitly asks for a 'compact, concise 1 day meal plan'—this provides guidance on what to eat, not an actual plan. A proper solution would show: 6:00 AM - [specific meal with portions], 8:00 AM - [post-run meal with portions], 12:30 PM - [lunch with portions], etc., with calculated macros for each.</td>
+                <td>Testing with a passage containing implicit and explicit topics, including proper nouns, abstract concepts, and methodological approaches to verify accurate extraction of both obvious and subtle subjects</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study employs mixed-methods phenomenological analysis to examine the intersection of artificial intelligence and organizational behavior within Fortune 500 companies. Using semi-structured interviews with 127 middle managers across technology, finance, and healthcare sectors, we investigated how machine learning implementation affects workplace dynamics, employee agency, and decision-making hierarchies. Our findings, grounded in Bourdieu's theory of social capital, reveal that algorithmic management systems paradoxically increase operational efficiency while diminishing workers' perceived autonomy. The research utilized NVivo for qualitative coding and structural equation modeling to test our theoretical framework, demonstrating statistically significant correlations (p < 0.001) between AI adoption rates and employee disengagement metrics across all three industries examined.</td>
+                <td class="criteria">• Extracts both explicit topics (artificial intelligence, machine learning, algorithmic management) and implicit ones (workplace dynamics, employee autonomy, social capital theory)<br>• Includes methodological approaches (mixed-methods phenomenological analysis, semi-structured interviews, NVivo, structural equation modeling)<br>• Captures proper nouns and specific entities (Bourdieu, Fortune 500 companies, technology/finance/healthcare sectors)<br>• Identifies abstract concepts and theoretical frameworks relevant to the research</td>
+                <td class="output"><pre>```json
+[
+  "Artificial intelligence",
+  "Organizational behavior",
+  "Fortune 500 companies",
+  "Machine learning implementation",
+  "Workplace dynamics",
+  "Employee agency",
+  "Decision-making hierarchies",
+  "Bourdieu's theory of social capital",
+  "Algorithmic management systems",
+  "Operational efficiency",
+  "Worker autonomy",
+  "Mixed-methods phenomenological analysis",
+  "Semi-structured interviews",
+  "Middle managers",
+  "Technology sector",
+  "Finance sector",
+  "Healthcare sector",
+  "NVivo qualitative coding",
+  "Structural equation modeling",
+  "AI adoption rates",
+  "Employee disengagement",
+  "Statistical significance testing"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array containing only topic strings with no extraneous commentary. It successfully extracts explicit topics, implicit concepts, methodological approaches, proper nouns, and theoretical frameworks as specified in the secondary criteria. The extraction is thorough and well-organized. The minor weaknesses relate to granularity choices and naming consistency rather than missing or incorrectly formatted content. These do not violate any stated criteria and represent reasonable interpretive decisions in topic extraction.</td>
             </tr>
         
             <tr>
-                <td>Testing with a strength/power athlete (weightlifter) needing high protein distribution and caloric surplus for muscle building</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> Muscle building with caloric surplus for strength training<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan spans exactly 1 day with 4-5 meals<br>• Daily protein distributed across meals (minimum 1.6g per kg bodyweight = 136g total)<br>• Caloric surplus of 300-500 calories above maintenance for muscle growth<br>• Includes pre/post-workout nutrition timing around strength training</td>
-                <td class="output"><pre># Nutrition Plan for Muscle Building
-
-## Daily Calorie Target
-**~3,000-3,200 calories/day** (moderate surplus for muscle gain)
-- Based on your stats (BMI ~26), this creates a sustainable 300-500 calorie surplus
-
-## Macronutrient Breakdown
-
-| Macro | Daily Target | Purpose |
-|-------|--------------|---------|
-| **Protein** | 170-180g (2.0-2.1g/kg) | Muscle protein synthesis |
-| **Carbs** | 375-450g | Training energy & recovery |
-| **Fats** | 85-100g | Hormone production & health |
-
-## Food Priorities
-
-**Protein Sources** (aim for 30-35g per meal)
-- Chicken, turkey, lean beef
-- Fish (especially fatty fish 2-3x/week)
-- Eggs & Greek yogurt
-- Legumes & cottage cheese
-
-**Carbs** (especially around workouts)
-- Oats, brown rice, sweet potatoes
-- Whole grain bread & pasta
-- Fruits (bananas, berries)
-- White rice (post-workout)
-
-**Healthy Fats**
-- Olive oil, avocados, nuts
-- Fatty fish, nut butters
-- Whole eggs
-
-## Practical Tip
-Eat in a **consistent caloric surplus** (not excessive) and **track protein intake** most carefully—it's the limiting factor for muscle growth.
-
-**Would you like a sample daily meal plan?**</pre></td>
-                <td class="score-col"><span class="score score-low">3</span></td>
-                <td class="reasoning">The solution provides excellent nutritional framework and guidance but fundamentally fails to deliver the core requirement: an actual 1-day meal plan with 4-5 specific meals. It reads as a template or educational material rather than a concrete meal plan. The mandatory requirements explicitly demand 'Meals with exact foods, portions, and timing' and 'pre/post-workout nutrition timing around strength training'—neither of which are present. The solution stops short of implementation and asks if the user wants the actual plan, which violates the task completion requirement.</td>
+                <td>Testing with a dense interdisciplinary passage that spans multiple fields (e.g., biology, chemistry, and ethics) to ensure the prompt correctly disambiguates and separates topics across domain boundaries</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in synthetic biology have enabled the engineering of metabolic pathways to produce pharmaceutical compounds, raising significant ethical concerns about equitable access and biosafety. CRISPR-Cas9 gene editing systems utilize guide RNAs to target specific DNA sequences with unprecedented precision, achieving off-target mutation rates below 0.1% in optimized protocols. Simultaneously, the chemical synthesis of modified nucleotides has improved through novel catalytic mechanisms involving transition metal coordination complexes, reducing production costs by 60%. However, the dual-use potential of these biotechnologies—their applicability to both therapeutic and harmful applications—has prompted regulatory bodies to establish oversight frameworks. The intersection of molecular engineering, organic chemistry, and bioethics reveals tensions between scientific innovation and responsible governance, particularly regarding access disparities in developing nations and the environmental implications of large-scale fermentation-based production systems.</td>
+                <td class="criteria">• Correctly identifies topics spanning at least three distinct domains (biology/biotechnology, chemistry, and ethics/governance)<br>• Separates interdisciplinary topics into distinct entries rather than merging them (e.g., 'CRISPR gene editing' distinct from 'biosafety concerns')<br>• Returns results as a JSON array of strings with no extraneous formatting or explanatory text</td>
+                <td class="output"><pre>```json
+[
+  "Synthetic biology",
+  "Metabolic pathway engineering",
+  "Pharmaceutical compound production",
+  "Equitable access",
+  "Biosafety",
+  "CRISPR-Cas9 gene editing",
+  "Guide RNAs",
+  "Off-target mutations",
+  "Chemical synthesis",
+  "Modified nucleotides",
+  "Catalytic mechanisms",
+  "Transition metal coordination complexes",
+  "Dual-use biotechnology",
+  "Regulatory oversight",
+  "Bioethics",
+  "Scientific innovation",
+  "Responsible governance",
+  "Access disparities in developing nations",
+  "Fermentation-based production",
+  "Environmental implications",
+  "Molecular engineering",
+  "Organic chemistry"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. It meets all secondary criteria by spanning three distinct domains and properly separating interdisciplinary topics into distinct entries. The extraction is thorough and accurate. Minor weaknesses exist in granularity and consistency, but these do not violate any stated criteria and represent subjective judgment calls rather than objective failures. The solution performs exactly as specified.</td>
             </tr>
         
             <tr>
-                <td>Testing with a sport-specific athlete (tennis player) requiring balanced macronutrients, hydration strategy, and energy management for multiple match-length sessions throughout the day</td>
-                <td class="prompt-inputs"><strong>height:</strong> 183 cm<br><strong>weight:</strong> 78 kg<br><strong>goal:</strong> Maintain energy and performance for multiple tennis matches throughout the day with optimal hydration and recovery<br><strong>restrictions:</strong> Vegetarian, no nuts</td>
-                <td class="criteria">• Meal plan includes 4-5 eating occasions spaced appropriately for match performance<br>• Balanced macronutrients with adequate carbohydrates for energy and protein for recovery<br>• Hydration strategy specified with fluid intake recommendations between and during sessions<br>• All meals and snacks accommodate vegetarian and nut-free restrictions</td>
-                <td class="output"><pre># Nutrition Plan for Tennis Performance
-
-## Pre-Match (2-3 hours before)
-
-**Balanced meal:**
-- Whole grain toast or rice with hummus
-- Banana or berries
-- Greek yogurt or cottage cheese
-- Water (500ml)
-
-**30 mins before court:**
-- Sports drink (6-8% carbs) or diluted juice
-- Easily digestible carbs (dates, energy bar, or applesauce)
-
-## During Play
-
-**Every 60-90 minutes:**
-- Sports drink with electrolytes (sodium, potassium)
-- Water between sets
-- Quick carbs: banana, energy gel, or dried fruit
-
-## Between Matches
-
-**Immediately after (0-30 mins):**
-- Chocolate milk or smoothie (carbs + protein)
-- Fruit + Greek yogurt
-- Electrolyte drink
-
-**30-90 mins between matches:**
-- Pasta with tomato sauce and cheese
-- Sandwich with hummus and vegetables
-- Rice cakes with jam
-- Hydrate consistently
-
-## Daily Hydration
-- **Base:** 3-4 liters water daily
-- **Add:** Electrolyte drinks on match days
-- **Monitor:** Urine color (pale yellow = well-hydrated)
-
-## Avoid During Play
-- High fiber foods
-- Fatty/greasy items
-- Anything untested
-
-**Note:** Adjust portions based on match intensity and recovery needs. Consider consulting a sports dietitian for personalized macro targets.</pre></td>
-                <td class="score-col"><span class="score score-low">2</span></td>
-                <td class="reasoning">The solution provides a well-organized framework addressing hydration, timing, and dietary restrictions. However, it fundamentally fails to meet all three mandatory requirements: (1) no daily caloric total is stated, (2) no macronutrient breakdown is provided, and (3) meals lack exact portions and precise timing. While the structure is sound and recommendations are appropriate for a tennis athlete, the solution reads as a general guideline rather than a specific 1-day meal plan with quantified nutrition data. The task explicitly requires these details, and their absence constitutes automatic failure per the mandatory requirements criteria.</td>
+                <td>Testing with a passage containing overlapping or hierarchical topics (e.g., 'machine learning' as a subtopic of 'artificial intelligence') to verify the prompt extracts distinct topic levels and avoids unnecessary redundancy</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in artificial intelligence have revolutionized data processing capabilities. Machine learning algorithms, particularly deep learning neural networks, have demonstrated exceptional performance in image recognition tasks. Supervised learning techniques enable these systems to identify patterns in training data, while unsupervised learning approaches discover latent structures without labeled examples. Natural language processing, a subfield of artificial intelligence, has benefited tremendously from transformer-based architectures that leverage machine learning principles. Additionally, reinforcement learning, another machine learning paradigm, powers autonomous decision-making in robotics and game-playing agents. The intersection of artificial intelligence and computer vision continues to expand, with convolutional neural networks serving as foundational machine learning models for visual understanding tasks.</td>
+                <td class="criteria">• Extracts all distinct topics mentioned, capturing both high-level domains (artificial intelligence, natural language processing, computer vision) and specific methodologies (machine learning, deep learning, supervised learning, unsupervised learning, reinforcement learning)<br>• Avoids redundant duplication of overlapping concepts while preserving their distinct identities<br>• Returns output as a JSON array of strings with properly formatted topic labels</td>
+                <td class="output"><pre>```json
+[
+  "Artificial intelligence",
+  "Data processing",
+  "Machine learning algorithms",
+  "Deep learning neural networks",
+  "Image recognition",
+  "Supervised learning",
+  "Pattern identification",
+  "Training data",
+  "Unsupervised learning",
+  "Latent structures",
+  "Natural language processing",
+  "Transformer-based architectures",
+  "Reinforcement learning",
+  "Autonomous decision-making",
+  "Robotics",
+  "Game-playing agents",
+  "Computer vision",
+  "Convolutional neural networks",
+  "Visual understanding tasks"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a properly formatted JSON array of strings containing topics from the passage with no extra commentary. It meets the secondary criteria by capturing distinct high-level domains and specific methodologies while avoiding major redundancy. The extraction is thorough and well-organized. The only minor issues are the inclusion of a few overly specific phrases that blur the line between topics and descriptive content, and slight inconsistency in naming conventions. These are minor deficiencies that don't significantly impact the overall quality of the extraction.</td>
             </tr>
         
             </tbody>
