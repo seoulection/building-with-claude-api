@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# Nutrition Plan for Marathon Training\n\n## Daily Macro Targets\n- **Calories**: ~2,800-3,000 (adjust based on weekly mileage)\n- **Carbs**: 55-60% (~400-450g) \u2014 fuels running\n- **Protein**: 15-20% (~105-120g) \u2014 muscle recovery\n- **Fat**: 20-25% (~70-80g) \u2014 hormone function\n\n## Pre-Run (1.5-2 hours before)\n- Banana + peanut butter toast (on lactose-free bread)\n- Oatmeal with almond milk and berries\n- Rice cakes with jam\n- *Goal: 200-300 cal, easily digestible carbs*\n\n## During Run (if >90 min)\n- Sports drink or electrolyte drink\n- Energy gels or dates\n- Pretzels\n\n## Post-Run (within 30-45 min)\n- Smoothie: banana, berries, lactose-free protein powder, almond milk\n- Toast with hummus + tomato\n- Rice + beans + vegetables\n- *Goal: 400-500 cal, carbs + protein 3:1 ratio*\n\n## Vegetarian Protein Sources\n- Lentils, chickpeas, beans\n- Tofu, tempeh\n- Nuts, seeds, nut butters\n- Lactose-free protein powder\n- Quinoa, whole grains\n\n## Key Timing\nCarbs consistently throughout the day, concentrated around your run for energy and recovery.\n\nWould you like specific meal ideas or recipes?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "72 kg",
+        "goal": "Marathon training with high carbohydrate intake and proper timing around a 2-hour morning run",
+        "restrictions": "Vegetarian, lactose intolerant"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals for one day and fits on a single page or concise format",
+        "Includes pre-run, during-run (if applicable), and post-run nutrition timed appropriately around the 2-hour morning training session",
+        "Provides high carbohydrate content suitable for endurance athlete (approximately 6-10g carbs per kg body weight daily)",
+        "Respects vegetarian and lactose-free dietary restrictions throughout all meals"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+    },
+    "score": 3,
+    "reasoning": "The solution violates multiple mandatory requirements. While it provides daily caloric totals and macro percentages, it fails to deliver 'meals with exact foods, portions, and timing' as explicitly required. The output is a nutritional framework with suggestions rather than an actual 1-day meal plan. For example, 'Banana + peanut butter toast' lacks portion sizes (which banana size? how much peanut butter? what bread type?), and there is no structured timeline showing breakfast, lunch, dinner, and snacks with specific quantities. The task explicitly asks for a 'compact, concise 1 day meal plan'\u2014this provides guidance on what to eat, not an actual plan. A proper solution would show: 6:00 AM - [specific meal with portions], 8:00 AM - [post-run meal with portions], 12:30 PM - [lunch with portions], etc., with calculated macros for each."
+  },
+  {
+    "output": "# Nutrition Plan for Muscle Building\n\n## Daily Calorie Target\n**~3,000-3,200 calories/day** (moderate surplus for muscle gain)\n- Based on your stats (BMI ~26), this creates a sustainable 300-500 calorie surplus\n\n## Macronutrient Breakdown\n\n| Macro | Daily Target | Purpose |\n|-------|--------------|---------|\n| **Protein** | 170-180g (2.0-2.1g/kg) | Muscle protein synthesis |\n| **Carbs** | 375-450g | Training energy & recovery |\n| **Fats** | 85-100g | Hormone production & health |\n\n## Food Priorities\n\n**Protein Sources** (aim for 30-35g per meal)\n- Chicken, turkey, lean beef\n- Fish (especially fatty fish 2-3x/week)\n- Eggs & Greek yogurt\n- Legumes & cottage cheese\n\n**Carbs** (especially around workouts)\n- Oats, brown rice, sweet potatoes\n- Whole grain bread & pasta\n- Fruits (bananas, berries)\n- White rice (post-workout)\n\n**Healthy Fats**\n- Olive oil, avocados, nuts\n- Fatty fish, nut butters\n- Whole eggs\n\n## Practical Tip\nEat in a **consistent caloric surplus** (not excessive) and **track protein intake** most carefully\u2014it's the limiting factor for muscle growth.\n\n**Would you like a sample daily meal plan?**",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "85 kg",
+        "goal": "Muscle building with caloric surplus for strength training",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan spans exactly 1 day with 4-5 meals",
+        "Daily protein distributed across meals (minimum 1.6g per kg bodyweight = 136g total)",
+        "Caloric surplus of 300-500 calories above maintenance for muscle growth",
+        "Includes pre/post-workout nutrition timing around strength training"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) needing high protein distribution and caloric surplus for muscle building"
+    },
+    "score": 3,
+    "reasoning": "The solution provides excellent nutritional framework and guidance but fundamentally fails to deliver the core requirement: an actual 1-day meal plan with 4-5 specific meals. It reads as a template or educational material rather than a concrete meal plan. The mandatory requirements explicitly demand 'Meals with exact foods, portions, and timing' and 'pre/post-workout nutrition timing around strength training'\u2014neither of which are present. The solution stops short of implementation and asks if the user wants the actual plan, which violates the task completion requirement."
+  },
+  {
+    "output": "# Nutrition Plan for Tennis Performance\n\n## Pre-Match (2-3 hours before)\n\n**Balanced meal:**\n- Whole grain toast or rice with hummus\n- Banana or berries\n- Greek yogurt or cottage cheese\n- Water (500ml)\n\n**30 mins before court:**\n- Sports drink (6-8% carbs) or diluted juice\n- Easily digestible carbs (dates, energy bar, or applesauce)\n\n## During Play\n\n**Every 60-90 minutes:**\n- Sports drink with electrolytes (sodium, potassium)\n- Water between sets\n- Quick carbs: banana, energy gel, or dried fruit\n\n## Between Matches\n\n**Immediately after (0-30 mins):**\n- Chocolate milk or smoothie (carbs + protein)\n- Fruit + Greek yogurt\n- Electrolyte drink\n\n**30-90 mins between matches:**\n- Pasta with tomato sauce and cheese\n- Sandwich with hummus and vegetables\n- Rice cakes with jam\n- Hydrate consistently\n\n## Daily Hydration\n- **Base:** 3-4 liters water daily\n- **Add:** Electrolyte drinks on match days\n- **Monitor:** Urine color (pale yellow = well-hydrated)\n\n## Avoid During Play\n- High fiber foods\n- Fatty/greasy items\n- Anything untested\n\n**Note:** Adjust portions based on match intensity and recovery needs. Consider consulting a sports dietitian for personalized macro targets.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "183 cm",
+        "weight": "78 kg",
+        "goal": "Maintain energy and performance for multiple tennis matches throughout the day with optimal hydration and recovery",
+        "restrictions": "Vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan includes 4-5 eating occasions spaced appropriately for match performance",
+        "Balanced macronutrients with adequate carbohydrates for energy and protein for recovery",
+        "Hydration strategy specified with fluid intake recommendations between and during sessions",
+        "All meals and snacks accommodate vegetarian and nut-free restrictions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a sport-specific athlete (tennis player) requiring balanced macronutrients, hydration strategy, and energy management for multiple match-length sessions throughout the day"
+    },
+    "score": 2,
+    "reasoning": "The solution provides a well-organized framework addressing hydration, timing, and dietary restrictions. However, it fundamentally fails to meet all three mandatory requirements: (1) no daily caloric total is stated, (2) no macronutrient breakdown is provided, and (3) meals lack exact portions and precise timing. While the structure is sound and recommendations are appropriate for a tennis athlete, the solution reads as a general guideline rather than a specific 1-day meal plan with quantified nutrition data. The task explicitly requires these details, and their absence constitutes automatic failure per the mandatory requirements criteria."
+  }
+]
